@@ -1,0 +1,42 @@
+/*Modificacion de las Card importadas*/
+.card-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding: 30px 0;
+    color: #ffffff;
+  }
+  
+  .card {
+    background: hsla(0, 2%, 50%, 0.33);
+    transition: ease 0.3s;
+    border-radius: 10px;
+  }
+  
+  .card:hover {
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.336);
+    transform: translateY(10px);
+  }
+  
+  .card > img {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .cont-btn {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .boton {
+    background: rgb(59, 158, 59);
+    border: none;
+    transition: 0.3s ease;
+  }
+  
+  .boton:hover {
+    background: black;
+  }
+  

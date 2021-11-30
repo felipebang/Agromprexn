@@ -1,0 +1,49 @@
+
+/*Creacion de galeria de fotos*/
+#galeria {
+    background: hsla(0, 2%, 50%, 0.33);
+    color: #ffffff;
+  }
+  
+  .contenedor-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .subtitulo {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .contenedor {
+    padding: 20px;
+  }
+  
+  .container-img {
+    width: 300px;
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+  
+  .contenedor-galeria img {
+    width: 300px;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  .contenedor-galeria img:hover {
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.336);
+    cursor: pointer;
+    transform: translateY(10px);
+  }
+  
+  @media (max-width: 700px) {
+    .container-img {
+      width: 70%;
+    }
+    .contenedor-galeria img {
+      width: 100%;
+    }
+  }
